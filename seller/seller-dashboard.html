@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Seller Dashboard | E - Store | E - Commerce Website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="seller.css" />
+</head>
+<body>
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <script src="seller-header.js"></script>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+  <main class="dashboard-main">
+    <!-- Sales & Revenue -->
+    <section class="dashboard-cards">
+      <div class="dashboard-card">
+        <div class="card-icon card-sales"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="card-info">
+          <div class="card-title">Total Sales</div>
+          <div class="card-value" id="totalSales">1,250</div>
+        </div>
+      </div>
+      <div class="dashboard-card">
+        <div class="card-icon card-revenue"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+        <div class="card-info">
+          <div class="card-title">Total Revenue</div>
+          <div class="card-value" id="totalRevenue">₹32,500</div>
+        </div>
+      </div>
+      <div class="dashboard-card">
+        <div class="card-icon card-aov"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="card-info">
+          <div class="card-title">Avg. Order Value</div>
+          <div class="card-value" id="avgOrderValue">₹26.00</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Status -->
+    <section class="order-status-section">
+      <h2>Order Status</h2>
+      <div class="order-status-list">
+        <div class="order-status-item pending">
+          <span class="status-label"><i class="fa-solid fa-hourglass-half"></i> Pending</span>
+          <span class="status-count" id="pendingOrders">12</span>
+        </div>
+        <div class="order-status-item shipped">
+          <span class="status-label"><i class="fa-solid fa-truck"></i> Shipped</span>
+          <span class="status-count" id="shippedOrders">8</span>
+        </div>
+        <div class="order-status-item delivered">
+          <span class="status-label"><i class="fa-solid fa-box"></i> Delivered</span>
+          <span class="status-count" id="deliveredOrders">30</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Performance -->
+    <section class="product-performance-section">
+      <h2>Product Performance</h2>
+      <div class="performance-flex">
+        <div class="top-products">
+          <h3>Top Selling Products</h3>
+          <ul>
+            <li>
+              <span class="prod-name">Wireless Headphones</span>
+              <span class="prod-sales">320 sold</span>
+            </li>
+            <li>
+              <span class="prod-name">Smart Watch</span>
+              <span class="prod-sales">210 sold</span>
+            </li>
+            <li>
+              <span class="prod-name">Bluetooth Speaker</span>
+              <span class="prod-sales">180 sold</span>
+            </li>
+          </ul>
+        </div>
+        <div class="low-stock">
+          <h3>Low Stock Items</h3>
+          <ul>
+            <li>
+              <span class="prod-name">USB-C Charger</span>
+              <span class="prod-stock">5 left</span>
+            </li>
+            <li>
+              <span class="prod-name">Laptop Stand</span>
+              <span class="prod-stock">3 left</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

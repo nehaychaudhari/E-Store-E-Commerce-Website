@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Add New Product | E - Store | E - Commerce Website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="seller.css" />
+</head>
+
+<body>
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <script src="seller-header.js"></script>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+    <section class="new-product-container">
+        <form id="newProductForm" class="new-product-form">
+            <h1>Add New Product</h1>
+
+            <label for="productId">Product ID
+                <input type="number" id="productId" class="info-input" required />
+            </label>
+
+            <label for="productName">Product Name
+                <input type="text" id="productName" class="info-input" required />
+            </label>
+
+            <label for="category">Category
+                <select id="category" class="info-input" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="television">Television</option>
+                    <option value="wireless headphones">Wireless Headphones</option>
+                    <option value="watches">Watches</option>
+                    <option value="speakers">Speakers</option>
+                </select>
+            </label>
+
+            <label for="brand">Brand
+                <input type="text" id="brand" class="info-input" required />
+            </label>
+
+            <label for="price">Price ($)
+                <input type="number" id="price" class="info-input" step="0.01" required />
+            </label>
+
+            <label for="stock">Stock
+                <input type="number" id="stock" class="info-input" required />
+            </label>
+
+            <label for="image">Product Image
+                <input type="file" id="image" class="info-input" accept="image/*" required />
+            </label>
+
+            <label for="description">Description
+                <textarea id="description" class="info-input" rows="4" required></textarea>
+            </label>
+
+            <label for="sellerName">Seller Name
+                <input type="text" id="sellerName" class="info-input" required />
+            </label>
+
+            <button type="submit" class="savebtn">Add Product</button>
+        </form>
+    </section>
+    <script type="module" src="new-product.js"></script>
+</body>
+</html>
