@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Login In | E - Store | E - Commerce Website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body">
+    <!-- Sign In Form Section Start -->
+    <section id="signin-form" class="user-form">
+        <form action="" id="signinform" class="signinform">
+
+            <h1>LOGIN</h1>
+            <label class="user-label" for="emailid">Email Address<span style="color: #ed0f3b;">*</span>
+                <input type="email" name="email" id="emailid" required autocomplete="on">
+            </label>
+
+            <label class="user-label" for="password">Password<span style="color: #ed0f3b;">*</span>
+                <input type="password" name="pass" id="password" required autocomplete="on">
+            </label>
+
+            <div class="check-pass">
+                <input type="checkbox" name="check" id="showpass">
+                <label for="showpass" style="font-weight: 700;">Show Password</label>
+            </div>
+            
+            <div class="redirect">
+                <a href="forgot-password.html" id="forgot">Forgot Password?</a>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="signin-button">LOGIN</button>
+                <a href="index.html" class="back">Back To Home</a>
+            </div>
+
+            <div class="redirect">
+                Don't have a Customer account? <a href="signUp.html" id="signup">Register Here</a><br>
+                Don't have a Seller account? <a href="become-seller.html" id="signup">Register Here</a>
+            </div>
+        </form>
+    </section>
+    <!-- Sign In Form Section End -->
+
+    <!-- Firebase Sign In Module JS File -->
+    <script type="module" src="signIn.js"></script>
+</body>
+
+</html>

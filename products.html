@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Links -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Products | E - Store | E - Commerce Website</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+  <!-- AOS Link Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- External Styling -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ========== Start Navbar ========== -->
+  <header class="section-navbar">
+    <script src="header.js"></script>
+  </header>
+  <!-- ========== End Navbar ========== -->
+
+  <!-- ========== Start Product Template Section ========== -->
+  <section class="section-products product-container">
+    <div id="laptops">
+      <h2 class="section-common--heading">Laptop</h2>
+    </div>
+  </section>
+  <div id="productContainer"></div>
+
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+        <h2 class="productName"></h2>
+
+        <p class="productDescription"></p>
+
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+
+        <div class="productStockElement">
+          <p class="productProperty">Total Stocks Available:</p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartDecrement">-</button>
+            <p class="productQuantity">1</p>
+            <button class="cartIncrement">+</button>
+          </div>
+        </div>
+
+        <a href="signIn.html" class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        </a>
+      </article>
+    </div>
+  </template>
+  <!-- ========== End Product Template Section ========== -->
+
+  <!--* ========== Start Footer Section ========== -->
+
+  <footer class="section-footer">
+    <script src="footer.js"></script>
+  </footer>
+  <!-- Include the footer JavaScript file -->
+
+  <!--* ========== End Footer Section ========== -->
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

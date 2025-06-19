@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Links -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Contact Us | E - Store | E - Commerce Website</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+  <!-- AOS Link Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- External Styling -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+  <!-- EmailJS Installation -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "MdOWzZu_NTqUDhFUz",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- ========== Start Navbar ========== -->
+  <header class="section-navbar">
+    <script src="header.js"></script>
+  </header>
+  <!-- ========== End Navbar ========== -->
+
+  <!-- ========== Start Contact Section ========== -->
+  <section class="section-contact">
+    <div class="container-contact">
+      <h2 class="section-common--heading">Contact US</h2>
+      <p class="section-common--subheading">
+        Get in touch with us. We are always here to help you.
+      </p>
+    </div>
+
+    <div class="container grid grid-two--cols">
+      <div class="contact-content">
+        <form action="#" id="contact-form">
+          <div class="grid grid-two-cols mb-3">
+            <div>
+              <label for="name">full name</label>
+              <input type="text" name="username" id="name" required autocomplete="on" placeholder="enter full name" />
+            </div>
+
+            <div>
+              <label for="email">email address</label>
+              <input type="email" id="email" required autocomplete="on" placeholder="abc@estore.com" />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject">subject</label>
+            <input type="text" name="sub" id="subject" required autocomplete="on"
+              placeholder="title of your message" />
+          </div>
+
+          <div class="mb-3">
+            <label for="message">message</label>
+            <textarea name="msg" id="message" cols="30" rows="10"
+              placeholder="we are always here to help you."></textarea>
+          </div>
+
+          <div class="mt-3">
+            <button type="submit" class="btn contact-btn" id="send-contact">
+              send message
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2613173278896!2d73.91411937501422!3d18.562253982539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1696124215167!5m2!1sen!2sin"
+          width="100%" height="auto" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Start Footer Section ========== -->
+  <footer class="section-footer">
+    <script src="footer.js"></script>
+  </footer>
+  <!-- ========== End Footer Section ========== -->
+
+  <!-- ========== End About Section ========== -->
+  
+  <script type="module" src="contact.js"></script>
+  <script type="module" src="/main.js"></script>
+
+  <!-- JS SCRIPT  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

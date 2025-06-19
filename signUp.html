@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Registration Form | E - Store | E - Commerce Website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body">
+    <!-- Sign Up Form Section Start -->
+    <section id="signUp-form" class="user-form">
+        <form action="" id="signUpform" class="signUpform">
+            
+            <h1>REGISTER</h1>
+            <label class="user-label" for="emailid">Email Address<span style="color: #ed0f3b;">*</span>
+                <input type="email" name="email" id="emailid" required autocomplete="on">
+            </label>
+
+            <label class="user-label" for="password">Password<span style="color: #ed0f3b;">*</span>
+                <input type="password" name="pass" id="password" required autocomplete="on">
+            </label>
+
+            <div class="check-pass">
+                <input type="checkbox" name="check" id="showpass">
+                <label for="showpass" style="font-weight: 700;">Show Password</label>
+            </div>
+
+            <label class="user-label" for="confirm-password">Confirm Password<span style="color: #ed0f3b;">*</span>
+                <input type="password" name="c-pass" id="confirm-password" required autocomplete="on">
+            </label>
+
+            <div class="check-pass">
+                <input type="checkbox" name="check" id="c-showpass">
+                <label for="c-showpass" style="font-weight: 700;">Show Password</label>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="signup-button">REGISTER</button>
+                <a href="index.html" class="back">Back To Home</a>
+            </div>
+
+            <div class="redirect">
+                Become a Seller <a href="become-seller.html">Register Here</a><br>
+                Already have an account? <a href="signIn.html">Login Here</a>
+            </div>
+        </form>
+    </section>
+    <!-- Sign Up Form Section End -->
+
+    <!-- Firebase Sign In Module JS File -->
+    <script type="module" src="signUp.js"></script>
+</body>
+
+</html>
