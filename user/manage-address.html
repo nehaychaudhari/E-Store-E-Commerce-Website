@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Manage Address Information | E - Store | E - Commerce Website</title>
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body style="margin-top: 7rem;">
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <script src="user-header.js"></script>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+    <!-- Manage Address -->
+    <section id="address" class="address">
+        <div class="manage">
+            <h1>Manage Addresses</h1>
+
+            <!-- Add New Address -->
+            <form action="" id="newaddress" class="new-address-form">
+
+                <button type="button" id="currentlocation" class="currentlocation">
+                    Use My Current Location
+                </button>
+
+                <label for="name" class="address-label">Name
+                    <input type="text" id="name" class="address-input" required autocomplete="on" />
+                </label>
+
+                <label for="mobile" class="address-label"> 10-digit mobile number
+                    <input type="number" id="mobile" class="address-input" maxlength="10" required />
+                </label>
+
+                <label for="pin" class="address-label"> Pincode
+                    <input type="text" id="pin" class="address-input" maxlength="6" required />
+                </label>
+
+                <label for="locality" class="address-label">Locality
+                    <input type="text" id="locality" class="address-input" required autocomplete="on" />
+                </label>
+
+                <label for="area" class="address-label">Address (Area and Street)
+                    <textarea id="area" rows="3" class="address-input" required></textarea>
+                </label>
+
+                <label for="city" class="address-label"> City/District/Town
+                    <input type="text" id="city" class="address-input" required />
+                </label>
+
+                <label class="address-label">Select State
+                    <select id="select" class="address-input" required>
+                        <option value="Select State" disabled selected>Select State</option>
+                        <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands
+                        </option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra &amp; Nagar Haveli &amp; Daman &amp; Diu">
+                            Dadra &amp; Nagar Haveli &amp; Daman &amp; Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </label>
+
+                <label for="landmark" class="address-label">Landmark (Optional)
+                    <input type="text" id="landmark" class="address-input" />
+                </label>
+
+                <label for="num" class="address-label">Aletrnate Phone (Optional)
+                    <input type="number" id="num" class="address-input" maxlength="10" />
+                </label>
+
+                <!-- Address Type | Home or Work -->
+                <p class="address-label">Address Type</p>
+                <div class="address-type" id="Address-Type">
+                    <div class="radio">
+                        <input type="radio" id="homeAdd" name="addtype" value="Home">
+                        <label for="homeAdd">Home</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="workAdd" name="addtype" value="Work">
+                        <label for="workAdd">Work</label>
+                    </div>
+                </div>
+
+                <!-- Save and Cancel Buttons -->
+                <div class="buttons">
+                    <button type="submit" id="saveadd" class="save-add-btn"> SAVE </button>
+                    <button type="reset" id="canceladd" class="cancel-add-btn"> CANCEL </button>
+                </div>
+            </form>
+
+            <!-- Display Added Address -->
+            <div id="productContainer" class="product-grid"></div>
+        </div>
+    </section>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

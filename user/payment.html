@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Links -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Payment | E - Store | E - Commerce Website</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+
+  <!-- AOS Link Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- External Styling -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="user.css" />
+
+  <!-- Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+</head>
+<body style="margin-top: 8rem;">
+  <!-- ========== Start Navbar ========== -->
+  <header class="section-navbar">
+    <script src="user-header.js"></script>
+  </header>
+  <!-- ========== End Navbar ========== -->
+
+  <div class="payment-main">
+    <!-- Payment Form -->
+    <section class="payment-section">
+      <h2>Payment</h2>
+      <hr>
+      <form id="payment-form">
+        <div class="card-icons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="card-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="card-logo">
+        </div>
+        <label for="card">Card Number</label>
+        <input type="text" id="card" maxlength="19" placeholder="5399 0000 0000 0000" required pattern="\d{4} \d{4} \d{4} \d{4}">
+        <div class="row">
+          <div class="col">
+            <label for="expiry">Expiration Date</label>
+            <input type="text" id="expiry" maxlength="5" placeholder="MM/YY" required pattern="\d{2}/\d{2}">
+          </div>
+          <div class="col">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" maxlength="4" placeholder="***" required pattern="\d{3,4}">
+          </div>
+        </div>
+        <div class="save-card">
+          <input type="checkbox" id="saveCard">
+          <label for="saveCard">Save card details</label>
+        </div>
+        <button type="submit" id="payBtn">Pay <span id="payAmount">USD0.00</span></button>
+        <p class="payment-note">
+          Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+        </p>
+      </form>
+    </section>
+
+    <!-- Order Summary -->
+    <aside class="summary-section">
+      <div class="summary-card">
+        <h3>Contact Details</h3>
+        <div class="summary-row">
+          <span>Full Name</span>
+          <span id="summaryName">Rupesh</span>
+        </div>
+        <div class="summary-row">
+          <span>Email</span>
+          <span id="summaryEmail">user1@gmail.com</span>
+        </div>
+        <div class="summary-row">
+          <span>Mobile</span>
+          <span id="summaryMobile">+91 9876543210</span>
+        </div>
+        <hr>
+        <h3>Order Summary</h3>
+        <div class="order-detail">
+          <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SX679_.jpg" alt="Product" class="summary-product-img">
+          <div>
+            <div class="summary-product-title" id="summaryProduct">Sony Play station 5</div>
+            <div class="summary-product-desc" id="summaryDesc">White color with Game Pad</div>
+          </div>
+          <div class="summary-product-price" id="summaryPrice">₹17113.10</div>
+        </div>
+        <div class="summary-row">
+          <input type="text" id="giftCode" placeholder="Gift or discount code">
+          <button type="button" id="applyGift">Apply</button>
+        </div>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="summarySubtotal">₹17113.10</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span id="summaryShipping">₹49.48</span>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Total</span>
+          <span id="summaryTotal">₹17,162.1</span>
+        </div>
+        <div class="summary-row summary-tax">
+          <span>Including ₹2.24 in taxes</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <script type="module" src="../main.js"></script>
+
+  <script>
+    document.getElementById('summaryName').textContent = "Rupesh";
+    document.getElementById('summaryEmail').textContent = "user1@gmail.com";
+    document.getElementById('summaryMobile').textContent = "+91 9876543210";
+    document.getElementById('summaryProduct').textContent = "Sony Play station 5";
+    document.getElementById('summaryDesc').textContent = "White color with Game Pad";
+    document.getElementById('summaryPrice').textContent = "₹17113.10";
+    document.getElementById('summarySubtotal').textContent = "₹17113.10";
+    document.getElementById('summaryShipping').textContent = "₹49.48";
+    document.getElementById('summaryTotal').textContent = "₹17,162.1";
+    document.getElementById('payAmount').textContent = "INR 17,162.1";
+  </script>
+</body>
+</html>

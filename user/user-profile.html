@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>User Profile | E - Store | E - Commerce Website</title>
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="../public/images/favicon.ico">
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body style="margin-top: 7rem;">
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <script src="user-header.js"></script>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+    <!-- Personal Information Default Page-->
+    <section id="account" class="profile-container">
+        <form action="" id="profileForm">
+
+            <h1>Personal Information</h1>
+            <img id="profile-pic-preview" class="profile-pic-preview">
+
+            <label for="profile-pic" class="user-name">Profile Picture
+                <input type="file" id="profile-pic" class="info-input" />
+            </label>
+
+            <label for="uname" class="user-name">Full Name
+                <input type="text" id="uname" class="info-input" autocomplete="on" required />
+            </label>
+
+            <label for="emailid" class="user-email">Email Address
+                <input type="email" id="emailid" class="info-input" autocomplete="on" required />
+            </label>
+
+            <label for="mobnumber" class="user-mob">Mobile Number
+                <input type="number" id="mobnumber" class="info-input" autocomplete="on" required />
+            </label>
+
+            <label for="userdob" class="user-dob">Date Of Birth
+                <input type="date" id="userdob" class="info-input" required />
+            </label>
+
+            <label for="gender" class="user-gender">Gender
+                <select id="gender" class="info-input">
+                    <option value="" disabled>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+            <!-- Save Button -->
+            <button type="submit" id="savebtn" class="savebtn">Save</button>
+
+            <!-- Delete Account Button -->
+            <button type="button" id="deleteAccount" class="deleteAccount">DELETE ACCOUNT</button>
+        </form>
+    </section>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="user-profile.js"></script>
+</body>
+
+</html>

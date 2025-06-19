@@ -1,0 +1,672 @@
+/* Global CSS Start */
+
+body {
+    min-width: 320px;
+    margin-top: 7rem;
+    background-color: #f4f4f4;
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--main-color);
+}
+
+/* Global CSS End */
+
+/* User Profile Section Start */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 100vh;
+
+    & * {
+        margin: 0.5rem 0;
+    }
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        & .profile-pic-preview {
+            width: 20rem;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #000000d3;
+        }
+
+        & h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        & label {
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+
+        & .info-input {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            box-shadow: 0 0 3px 3px #00000022;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        & .savebtn,
+        .deleteAccount {
+            padding: 1rem 0;
+            background-color: transparent;
+            font-weight: 700;
+            margin: 1rem 0;
+            border: 3px solid;
+            border-radius: 10px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+
+        & .savebtn {
+            color: #008000;
+            border-color: #008000;
+
+            &:hover {
+                background-color: #008000;
+            }
+        }
+
+        & .deleteAccount {
+            color: #e31a00;
+            border-color: #e31a00;
+
+            &:hover {
+                background-color: #e31a00;
+            }
+        }
+    }
+}
+
+/* User Profile Section End */
+
+/* Change Password Start */
+
+.changePass {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .changePasswordForm {
+        display: flex;
+        flex-direction: column;
+        min-width: 60%;
+        min-height: 60%;
+
+        & h2 {
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+
+        & label {
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+
+        & .password-input {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            box-shadow: 0 0 3px 3px #00000022;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        & .change-password-button {
+            padding: 1rem 0;
+            background-color: transparent;
+            color: #008000;
+            font-weight: 700;
+            margin: 1rem 0;
+            border: 3px solid #008000;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: #008000;
+                color: #ffffff;
+            }
+        }
+
+        & .check-pass {
+            display: flex;
+            align-items: center;
+
+            & input {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+/* Change Password End */
+
+/* Pan Card Section Start */
+
+.pan-card {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .card {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    & .declare {
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: justify;
+    }
+
+    & .pan-label {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        width: 90%;
+    }
+
+    & .pan-input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        box-shadow: 0 0 3px 3px #00000022;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    & .upload-pan-btn {
+        padding: 1rem 0;
+        font-weight: 700;
+        margin: 1rem 0;
+        border-radius: 10px;
+        width: 90%;
+        border: 3px solid #008000;
+        background-color: transparent;
+        color: #008000;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #008000;
+        }
+    }
+
+}
+
+/* Pan Card Section End */
+
+/* Manage Address Section Start */
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+    & .manage {
+        display: flex;
+        padding: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+
+        & h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        & .new-address-form .currentlocation {
+            background: #ffffff;
+            color: #1778d9;
+            width: 90%;
+            border-radius: 10px;
+            padding: 1rem 0;
+            font-weight: 600;
+            margin: 1rem 0;
+
+            &:hover {
+                color: #ffffff;
+                background: #1778d9;
+            }
+        }
+
+        .new-address-form .currentlocation {
+            width: 100%;
+        }
+
+        & .new-address-form {
+            width: 90%;
+        }
+
+        & .address-label {
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: 1rem 0;
+            width: 100%;
+        }
+
+        & .address-input {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            box-shadow: 0 0 3px 3px #00000022;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        & .address-type {
+            display: flex;
+            align-items: center;
+
+            & .radio {
+                display: flex;
+                padding: 1rem 2rem 2rem 0;
+
+                & input {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        & .buttons {
+            & .save-add-btn {
+                background-color: #fff;
+                border: 5px solid #3dc8ef;
+                color: #3dc8ef;
+
+                &:hover {
+                    background-color: #3dc8ef;
+                }
+            }
+
+            & .cancel-add-btn {
+                background-color: #fff;
+                border: 5px solid #eb1414;
+                color: #eb1414;
+
+                &:hover {
+                    background-color: #eb1414;
+                }
+            }
+
+            & button {
+                width: 20%;
+                padding: 1rem;
+                font-size: 2.5rem;
+                font-weight: 700;
+                border-radius: 10px;
+                margin: 1rem 2rem 3rem 0;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/* Manage Address Section End */
+
+/* Payment Section Start */
+
+.payment-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    & h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    & label {
+        display: block;
+        margin-top: 18px;
+        margin-bottom: 6px;
+        color: #555;
+    }
+
+    & input,
+    & select {
+        width: 100%;
+        padding: 9px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+
+    & button {
+        width: 100%;
+        padding: 12px;
+        background: #0078d7;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 17px;
+        margin-top: 22px;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #005fa3;
+        }
+    }
+}
+
+/* Payment Section End */
+
+/* Payment Professional Layout */
+.payment-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.payment-section {
+    background: #fff;
+    padding: 32px 28px 18px 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 420px;
+    min-width: 320px;
+}
+
+.payment-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.payment-section hr {
+    margin: 10px 0 18px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.pay-methods {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+}
+
+.pay-radio {
+    margin-left: 5px;
+    font-weight: 600;
+    color: #222;
+}
+
+.pay-radio.disabled {
+    color: #aaa;
+}
+
+.card-icons {
+    margin-bottom: 18px;
+}
+
+.card-logo {
+    height: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.payment-section label {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: #444;
+}
+
+.payment-section input[type="text"],
+.payment-section input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: #fafafa;
+}
+
+.payment-section .row {
+    display: flex;
+    gap: 12px;
+}
+
+.payment-section .col {
+    flex: 1;
+}
+
+.save-card {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+.save-card label {
+    margin: 0 0 0 6px;
+    font-weight: 400;
+    color: #666;
+    font-size: 15px;
+}
+
+.payment-section button {
+    width: 100%;
+    padding: 13px;
+    background: #22c55e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.payment-section button:hover {
+    background: #16a34a;
+}
+
+.payment-note {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.summary-section {
+    width: 420px;
+    min-width: 320px;
+}
+
+.summary-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 28px 24px 18px 24px;
+}
+
+.summary-card h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0;
+    font-size: 15px;
+    color: #444;
+}
+
+.summary-row input[type="text"] {
+    width: 70%;
+    margin-right: 8px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
+.summary-row button {
+    padding: 7px 18px;
+    background: #eee;
+    color: #444;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.summary-row button:hover {
+    background: #ccc;
+}
+
+.order-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0 10px 0;
+}
+
+.summary-product-img {
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.summary-product-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #222;
+}
+
+.summary-product-desc {
+    font-size: 13px;
+    color: #888;
+}
+
+.summary-product-price {
+    font-weight: 700;
+    color: #222;
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-top: 8px;
+}
+
+.summary-tax {
+    font-size: 13px;
+    color: #888;
+    margin-top: 2px;
+    justify-content: flex-end;
+}
+
+/* Responsive */
+@media (width <=980px) {
+    .section-navbar {
+        overflow: scroll;
+    }
+
+    .section-navbar .container {
+        padding: 1rem;
+    }
+
+    .pan-card .card {
+        width: 100%;
+    }
+
+    .payment-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (width <=768px) {
+    .productQuantity {
+        text-align: center;
+    }
+
+    .stockElement {
+        grid-column: 1 / 4;
+    }
+
+    .section-navbar .container {
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .payment-section,
+    .summary-section {
+        width: 98%;
+        min-width: unset;
+    }
+}
+
+/***** End Media Queries Section *****/

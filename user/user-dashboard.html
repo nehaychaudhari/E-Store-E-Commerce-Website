@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>User Dashboard | E - Store | E - Commerce Website</title>
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+
+    <!-- AOS Link Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="margin-top: 7rem;">
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <script src="user-header.js"></script>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+    <!-- ========== Start Home Hero Section ========== -->
+    <main>
+        <section class="section-hero">
+            <div class="container grid grid-two--cols">
+                <div class="section-hero--content">
+                    <p class="hero-subheading">Explore the Latest in Tech Industries</p>
+                    <h1 class="hero-heading">
+                        Your Destination for Cutting-Edge Gadgets!
+                    </h1>
+                    <p class="hero-para">
+                        Welcome to E - Store eComStore, your ultimate destination for
+                        cutting-edge gadgets! Explore the latest in tech innovation and
+                        style with us. Shop now and discover a world of possibilities!
+                    </p>
+                    <div class="hero-btn">
+                        <a href="products.html" class="btn">Explore Our Products</a>
+                    </div>
+                </div>
+                <div class="section-hero-image" data-aos="fade-up" data-aos-delay="600">
+                    <figure>
+                        <img src="../public/images/heroSection.svg" alt="Gadgets" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ========== End Home Hero Section ========== -->
+
+    <!-- ========== Start Extra Product Section ========== -->
+    <section class="section-extra-product">
+        <div class="container grid grid-three--cols">
+            <div class="div-extra grid grid-two--cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>get and extra 50% off</h3>
+                    <a href="#laptops">Show now</a>
+                </div>
+                <div class="extra-img extra-laptop">
+                    <img src="../images/laptop.png" alt="" />
+                </div>
+            </div>
+
+            <div class="div-extra grid grid-two--cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>40% discount on speakers</h3>
+                    <a href="#headphone">Show now</a>
+                </div>
+                <div class="extra-img">
+                    <img src="../images/headphoneEcom.png" alt="" />
+                </div>
+            </div>
+
+            <div class="div-extra grid grid-two--cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>get and extra 50% off</h3>
+                    <a href="#mobiles">Show now</a>
+                </div>
+                <div class="extra-img">
+                    <img src="../images/mobiles.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Extra Product Section ========== -->
+
+    <!-- ========== Start Our Products Section ========== -->
+    <section class="section-products container">
+        <h2 class="section-common--heading">Checkout E - Store</h2>
+        <section class="container">
+            <div id="productContainer"></div>
+        </section>
+    </section>
+
+    <!-- ========== Start Product Template Section ========== -->
+    <template id="productTemplate">
+        <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <span class="category"></span>
+                <div class="imageContainer">
+                    <img class="productImage" src="" alt="" />
+                </div>
+                <h2 class="productName"></h2>
+
+                <div class="productRating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="productDescription"></p>
+
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+
+                <div class="productStockElement">
+                    <p class="productProperty">Total Stocks Available:</p>
+                    <p class="productStock"></p>
+                </div>
+
+                <div class="productQuantityElement">
+                    <p class="productProperty">Quantity (Pieces)</p>
+                    <div class="stockElement">
+                        <button class="cartDecrement">-</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartIncrement">+</button>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                </button>
+            </article>
+        </div>
+    </template>
+    <!-- ========== End Product Template Section ========== -->
+    <!-- ========== End Our Products Section ========== -->
+
+    <!-- JS SCRIPT  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

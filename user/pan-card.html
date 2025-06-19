@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Links -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Pan Card Information | E - Store | E - Commerce Website</title>
+
+    <!-- Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+
+    <!-- External Styling -->
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body style="margin-top: 7rem;">
+    <!-- ========== Start Navbar ========== -->
+    <header class="section-navbar">
+        <script src="user-header.js"></script>
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+    <!-- PAN Card Information -->
+    <section id="pan" class="pan-card">
+        <form action="" class="card" id="pan-form">
+            <h2>PAN Card Information</h2>
+
+            <!-- PAN Card Number -->
+            <label class="pan-label" for="panNumber">PAN Card Number
+                <input type="text" id="panNumber" class="pan-input" placeholder=" " required />
+            </label>
+
+            <!-- Full Name -->
+            <label class="pan-label" for="fullName">
+                Full Name
+                <input type="text" id="fullName" class="pan-input" placeholder=" " required />
+            </label>
+
+            <!-- PAN Card Image in JPEG -->
+            <label class="pan-label" for="panFile">
+                Upload PAN Card (Only JPEG file is allowed)
+                <input type="file" id="panFile" class="pan-input" accept="image/jpeg" placeholder=" " required />
+            </label>
+
+            <!-- PAN Card Declaration -->
+            <label class="declare" for="declaration">
+                <input type="checkbox" id="declaration" class="" required />
+                I do hereby declare that PAN furnished/stated above is correct and belongs to
+                me, registered as an account holder with www.estore.com. I further declare
+                that I shall solely be held responsible for the consequences, in case of any
+                false PAN declaration.
+            </label>
+
+            <button type="submit" id="uploadPanBtn" class="upload-pan-btn">UPLOAD</button>
+        </form>
+    </section>
+    <script type="module" src="pan-card.js"></script>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

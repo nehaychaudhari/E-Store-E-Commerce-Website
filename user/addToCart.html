@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Links -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Add To Cart | E - Store | E - Commerce Website</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+  <!-- AOS Link Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- External Styling -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin-top: 0;">
+  <!-- ========== Start Navbar ========== -->
+  <header class="section-navbar">
+    <script src="user-header.js"></script>
+  </header>
+  <!-- ========== End Navbar ========== -->
+
+  <section class="addToCartElement">
+    <div class="container">
+      <section>
+        <div id="productCartContainer"></div>
+      </section>
+
+      <section class="productCartTotalElem">
+        <div class="productCartTotalElement">
+          <p>Selected Offer Summary</p>
+          <div class="productOrderTotal">
+            <div>
+              <p>Sub Total:</p>
+              <p class="productSubTotal">0</p>
+            </div>
+            <div>
+              <p>Tax:</p>
+              <p class="productTax">0</p>
+            </div>
+            <hr />
+            <div>
+              <p>Final Total:</p>
+              <p class="productFinalTotal">0</p>
+            </div>
+          </div>
+          <hr />
+          <div class="checkout-container">
+            <a href="payment.html" class="checkout-btn">Proceed to Checkout</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Template for a product -->
+  <template id="productCartTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [ card ]">
+        <div>
+          <span class="category"></span>
+        </div>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+
+        <h2 class="productName"></h2>
+
+        <p class="productPrice"></p>
+
+        <div class="stockElement">
+          <button class="cartDecrement">-</button>
+          <p class="productQuantity" data-quantity="1">1</p>
+          <button class="cartIncrement">+</button>
+        </div>
+
+        <!-- <button class="add-to-cart-button">Add To Cart</button> -->
+        <button class="add-to-cart-button remove-to-cart-button">
+          Remove
+        </button>
+      </article>
+    </div>
+  </template>
+
+  <script type="module" src="../showAddToCartCards.js"></script>
+</body>
+
+</html>
